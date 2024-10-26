@@ -31,18 +31,45 @@ Este proyecto fue desarrollado como parte de un desafío de ingeniería de softw
 
 ## 📂 Estructura del Proyecto
 
-```bash
+```
 my-app/
 │
-├── public/           # Archivos públicos (imágenes, iconos, etc.)
-├── src/
-│   ├── components/   # Componentes React reutilizables
-│   ├── styles/       # Archivos de estilo CSS
-│   ├── App.tsx       # Componente principal
-│   ├── index.tsx     # Archivo de entrada
+├── node_modules/
+├── public/
+│   └── logo.svg
+│   └── etc.etc
 │
-├── package.json      # Configuración del proyecto y dependencias
-└── README.md         # Documentación del proyecto
+├── src/
+│   ├── components/
+│   │   ├── body/
+│   │   │   ├── body.tsx
+│   │   │   └── bodyStyles.css
+│   │   ├── card/
+│   │   │   ├── card.tsx
+│   │   │   └── cardStyles.css
+│   │   ├── footer/
+│   │   │   ├── footer.tsx
+│   │   │   └── footerStyles.css
+│   │   ├── header/
+│   │   │   ├── header.tsx
+│   │   │   └── headerStyles.css
+│   │   └── navbar/
+│   │       ├── navbar.tsx
+│   │       └── navbarStyles.css
+│   │
+│   ├── App.css
+│   ├── App.tsx
+│   ├── App.test.js
+│   ├── custom.d.ts
+│   ├── index.css
+│   ├── index.tsx
+│  
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── tsconfig.json
 ```
 
 ---
