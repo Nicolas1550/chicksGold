@@ -1,0 +1,173 @@
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgba(44, 47, 63, 0);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: -20px;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.header-filters {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.select-game {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  background-color: #52546658;
+  border-radius: 8px;
+  color: #b3b3b3;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 230px;
+  justify-content: space-between;
+  margin-right: 0;
+}
+
+.icon-left {
+  margin-right: 8px;
+  color: white;
+}
+
+.icon-dropdown {
+  font-size: 10px;
+  margin-left: auto;
+  color: #b3b3b3;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #52546658;
+  border-radius: 8px;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 550px;
+  margin-left: -2px;
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: white;
+}
+
+.search-input {
+  padding: 19px 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.price-filter,
+.item-type-filter {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #52546658;
+  border-radius: 8px;
+  color: #b3b3b3;
+  font-size: 12px;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 160px;
+  margin-left: -2px;
+}
+
+.filter-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-icon {
+  font-size: 18px;
+  margin-right: 5px;
+  color: #3bff96b9;
+}
+
+.filter-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter-title {
+  font-size: 10px;
+  color: #b3b3b3;
+}
+
+.filter-value {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.icon-dropdown {
+  font-size: 10px;
+  color: #b3b3b3;
+}
+
+@media (max-width: 1300px) {
+  .header-container {
+    padding: 0rem;
+  }
+
+  .header-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .header-filters {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .select-game {
+    max-width: 100%;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .search-wrapper {
+    max-width: 80%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .price-filter,
+  .item-type-filter {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .filter-icon {
+    font-size: 16px;
+  }
+
+  .filter-value {
+    font-size: 14px;
+  }
+}

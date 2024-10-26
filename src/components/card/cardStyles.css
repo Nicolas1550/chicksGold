@@ -1,0 +1,261 @@
+.card {
+  background-color: #303344;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: left;
+  max-width: 240px;
+  position: relative;
+}
+
+.quantity-input {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  background-color: #3a3e50ab;
+  border-radius: 8px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50px;
+  height: 40px;
+  margin-right: 13px;
+}
+
+.quantity-number {
+  font-size: 16px;
+  color: white;
+  margin-left: 5px;
+}
+
+.quantity-arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+  gap: 8px;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 6px solid white;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid white;
+}
+
+.card-content-container {
+  margin-left: 13px;
+}
+
+.card-image-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.card-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.card-title-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.product-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: -10px;
+}
+
+.current-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  text-decoration-color: #ff5252;
+  color: rgb(166, 165, 165);
+  font-size: 14px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.on-sale {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.on-sale-dot {
+  color: #00ff00;
+  margin-right: 5px;
+}
+
+.on-sale-text {
+  color: white;
+}
+
+.in-stock {
+  background-color: transparent;
+  color: #1f8242;
+  padding: 3px 8px;
+  border: 1px solid #1f783e;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.card-description {
+  font-size: 12px;
+  color: #a0a0a0;
+  margin: 10px 0;
+}
+
+.card-actions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.details-button {
+  background-color: #605c5c23;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  flex-grow: 2;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.add-button {
+  background-color: #5865f2;
+  border: none;
+  color: white;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 3;
+  min-width: 0;
+}
+
+.add-button .cart-icon {
+  margin-left: 5px;
+  background-color: #12121254;
+  padding: 5px;
+  border-radius: 20%;
+  font-size: 16px;
+  color: white;
+}
+
+.add-button:hover {
+  background-color: #4854c9;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .card-title-container {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 5px;
+  }
+  .quantity-input {
+    width: 40px;
+    height: 35px;
+  }
+
+  .card-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .current-price {
+    font-size: 16px;
+  }
+
+  .old-price {
+    font-size: 12px;
+  }
+
+  .details-button,
+  .add-button {
+    font-size: 12px;
+    padding: 0.6rem;
+  }
+
+  .add-button .cart-icon {
+    font-size: 14px;
+  }
+
+  .card-actions-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card-description {
+    font-size: 11px;
+  }
+}
